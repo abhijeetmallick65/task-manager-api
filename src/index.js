@@ -139,5 +139,6 @@ const upload = multer({
 //     res.status(404).send({ error: error.message });
 //   }
 // );
+console.log(process.env.MONGODB_URL);
 // listen
 app.listen(port, () => console.log(`Listening at ${port}`));
